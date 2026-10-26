@@ -1,0 +1,62 @@
+En esta práctica evaluable utilizaremos los conocimientos adquiridos hasta esta sesión, con el uso de estructuras selectivas e iterativas. Para ello se pide que completes estos ejercicios en ficheros fuente separados, con el nombre que se indica en cada uno.
+
+Ejercicio 1
+
+Crea un programa en un fichero llamado Practica_1_1.cs que simule el ordenador de a bordo de un coche para calcular el consumo de combustible y dar un aviso al conductor.
+
+El programa solicitará dos datos al usuario con las siguientes reglas de validación:
+
+- Capacidad del depósito (en litros): Debe ser un número entero entre 30 y 100 (inclusive). Si el usuario introduce un valor fuera de este rango, el programa deberá volver a pedirlo tantas veces como sea necesario hasta que introduzca un dato válido.
+- Litros actuales en el depósito: Debe ser un número entero mayor o igual que 0 y menor o igual que la capacidad del depósito introducida en el paso anterior. Si no cumple esta condición, el programa mostrará el mensaje "Cantidad no válida" y finalizará la ejecución sin hacer más operaciones.
+
+Si los datos son correctos, el programa deberá:
+
+- Calcular el porcentaje de combustible restante: Porcentaje = Litros actuales * 100 / Capacidad
+- Si el porcentaje es menor al 15%, mostrará el mensaje: "Atención: Entrando en reserva"
+- Finalmente, clasificará la autonomía según los litros actuales:
+   - Si tiene menos de 10 litros mostrará "Autonomía baja: Busca una gasolinera pronto".
+   - Si tiene entre 10 y 30 litros (inclusive) mostrará "Autonomía media".
+   - Si tiene más de 30 litros mostrará "Autonomía suficiente".
+
+Ejemplo de ejecución 1
+
+Dime la capacidad del depósito (30-100 L): 200
+Valor incorrecto. Debe estar entre 30 y 100.
+Dime la capacidad del depósito (30-100 L): 50
+Dime los litros actuales: 6
+Atención: Entrando en reserva
+Autonomía baja: Busca una gasolinera pronto
+
+Ejemplo de ejecución 2
+
+Dime la capacidad del depósito (30-100 L): 60
+Dime los litros actuales: 80
+Cantidad no válida
+
+Ejercicio 2
+
+Crea un programa en un fichero llamado Practica_1_2.cs que resuelva el siguiente problema...
+
+Un profesor necesita procesar las notas finales de un grupo de 10 alumnos (identificados con los números del 1 al 10) para gestionar unas ayudas de estudio. Diseña un programa que cumpla los siguientes requerimientos:
+
+- Pedir al usuario la nota que requiere la beca (un número entero entre 5 y 10). Si el valor introducido no es válido, se volverá a pedir hasta que lo sea.
+- Utilizando el bucle adecuado, deberá luego pedir la nota de cada alumno del 1 al 10. La nota será un número entero entre 0 y 10, y asumiremos que las notas que se introducen serán correctas (no hay que hacer ninguna comprobación sobre esto).
+- Para cada alumno con una nota mayor o igual a la nota requerida para beca, el programa mostrará el mensaje: "Alumno X: Candidato a beca".
+- Mensaje final: Al terminar de evaluar a los 10 alumnos, si más de la mitad (6 o más) resultaron candidatos, mostrará el mensaje: "Cupo de becas superado".
+
+Ejemplo de ejecución:
+
+Dime la nota mínima para la beca (5-10): 8
+Nota del alumno 1: 6
+Nota del alumno 2: 9
+Alumno 2: Candidato a beca
+Nota del alumno 3: 4
+... (continúa hasta el alumno 10)
+
+Consideraciones al realizar los ejercicios
+
+Echa un vistazo a las normas generales de calificación de los ejercicios entregables, para saber cómo deben hacerse y qué aspectos se penalizan.
+
+Para entregar
+
+Debes entregar los dos ficheros fuente .cs (NO los compilados). Puedes entregarlos sueltos o bien comprimidos en un fichero ZIP o similar llamado Practica1.zip.
